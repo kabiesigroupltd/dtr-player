@@ -1,0 +1,26 @@
+
+.audio-player {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 420px;
+  max-width: calc(100vw + 5px);
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -20px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.audio__title {
+  color: #7F0000;
+  width: 305px;
+  max-width: calc(100vw - 110px);
+  margin-left: 8px;
+  font-weight: 600;
+}
+.audio__title--err {
+  color: #A00000;
+}

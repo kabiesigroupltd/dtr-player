@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="DataFreeRadio Player. The web app that gives the ability to listen Internet radio.">
+  <meta name="application-name" content="DataFreeRadio Player">
+  <meta name="summary" content="DataFreeRadio Player">
+  <meta name="url" content="https://radio.datafree.network/radio-player/">
+
+  <title>DataFreeRadio v4.1.0</title>
+  <script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@type": "WebApplication",
+      "name": "DataFreeRadio Player",
+      "softwareVersion": "4.1.0",
+      "description": "DataFreeRadio Player. The web app that gives the ability to listen Internet radio.",
+      "author": {
+        "@type": "Alien and Person",
+        "name": "Kabiesi Ademola & Yevhenii Molodyi"
+      },
+      "url": "https://radio.datafree.network/radio-player/",
+      "image": "#"
+    }</script>
+
+  <link rel="icon" href="/css/favicon.png" sizes="32x32" type="image/png">
+  <base target="_blank">
+
+  <!--[if IE]>
+      <script src="lib/es6-shim.min.js"></script>
+      <script src="lib/es6-promise.min.js"></script>
+      <script src="lib/fetch.min.js"></script>
+  <![endif]-->
+
+  <script>
+    'use strict';
+    ;(function(){
+      var polyfill = {
+        add : function(path){
+          var js = document.createElement('script');
+          js.src = path;
+          document.head.appendChild(js);
+          return polyfill;
+        }
+      };
+      if (!Object.assign){
+        polyfill.add('lib/es6-shim.min.js')
+                .add('lib/es6-promise.min.js')                ;
+      }
+      if (!window.fetch){
+        polyfill.add('lib/fetch.min.js')
+      }
+      if (!Array.isArray) {
+        Array.isArray = function(arg) {
+           return Object.prototype.toString.call(arg) === '[object Array]';
+        };
+      }
+    })()
+  </script>
+
+  <link rel="stylesheet" href="css/app-b203430b38.min.css">
+
+</head>
+<body>
+
+   <div id="app" class="app">
+   </div>
+
+   <!--googleoff: snippet-->
+   <noscript>
+      <div class="noscript__root">
+        <div class="noscript__header">
+           <h1 class="noscript__caption">DataFreeRadio</h1>
+        </div>
+        <div class="noscript__msg">
+          <p>It seems JavaScript in your browser disabled or not supported.</p>
+          <br/>
+          <p>To use <a class="noscript__link" href=".">DataFreeRadio App</a>, please, enable JavaScript in the browser and reload the page.</p>
+        </div>
+      </div>
+   </noscript>
+   <!--googleon: snippet-->
+   <script src="app/lib_a4a3886b506190a45d83.js" defer></script>
+   <script src="app/app_06d42f7136333b3508c9.js" defer></script>
+
+</body>
+</html>
